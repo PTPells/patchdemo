@@ -79,6 +79,22 @@ form {
 	max-width: 50em;
 }
 
+/* T263737 */
+.oo-ui-fieldLayout-body:after {
+	content: ' ';
+	clear: both;
+	display: block;
+}
+
+/* Left margin looks odd when there is no field label */
+.createField .oo-ui-fieldLayout-messages > .oo-ui-messageWidget {
+	margin-left: 0;
+}
+
+.createField .oo-ui-fieldLayout-messages > .oo-ui-messageWidget:first-child {
+	margin-top: 12px;
+}
+
 summary {
 	cursor: pointer;
 }
